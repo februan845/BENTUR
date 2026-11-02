@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f3ee" />
+  <meta name="description" content="BENTUR — tempat masalah dari dunia berbeda bertemu dan berevolusi menjadi ide baru." />
+  <title>BENTUR — Let Ideas Collide</title>
+  <link rel="stylesheet" href="/styles.css?v=20261102-2" />
+  <script src="/app.js?v=20261102-2" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="BENTUR beranda"><span class="brand-mark">B.</span><span>BENTUR<span class="brand-dot">/</span></span></a>
+      <nav class="nav-links" aria-label="Navigasi utama">
+        <a href="#discovery">Discovery</a>
+        <a href="#collision-lab">Collision Lab</a>
+        <a href="#how-it-works">Cara kerja</a>
+      </nav>
+      <a class="top-cta" href="#submit-problem">+ Tambah masalah</a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse-dot"></span> IDE BARU DIMULAI DARI PERTANYAAN</div>
+          <h1>Ide hebat lahir<br />saat dunia <em>bertabrakan.</em></h1>
+          <p class="hero-lede">Pertemukan masalah dari bidang yang berbeda. Temukan sudut pandang yang tak terpikirkan. Uji ide itu di dunia nyata.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#collision-lab">Mulai tabrakan <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#discovery">Jelajahi masalah <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-proof"><div class="avatar-stack"><span>ED</span><span>DX</span><span>⚡</span></div><span>Masalah berbeda. Kemungkinan tanpa batas.</span></div>
+        </div>
+        <div class="hero-art" aria-label="Ilustrasi masalah saling terhubung">
+          <div class="art-label label-one"><span class="mini-dot orange"></span> PENDIDIKAN</div>
+          <div class="art-label label-two"><span class="mini-dot blue"></span> TEKNOLOGI</div>
+          <div class="art-label label-three"><span class="mini-dot green"></span> LINGKUNGAN</div>
+          <svg class="connection-lines" viewBox="0 0 520 430" role="img" aria-label="Garis yang menyatukan ide">
+            <path d="M95 106 C160 106 160 188 242 208 S340 285 409 316" />
+            <path d="M405 88 C350 140 330 165 242 208 S170 318 110 344" />
+            <path d="M95 106 C165 50 310 38 405 88" />
+            <path d="M110 344 C200 370 335 376 409 316" />
+            <circle cx="95" cy="106" r="5"/><circle cx="405" cy="88" r="5"/><circle cx="110" cy="344" r="5"/><circle cx="409" cy="316" r="5"/>
+          </svg>
+          <div class="orb orb-orange"><span>?</span></div>
+          <div class="orb orb-blue"><span>↗</span></div>
+          <div class="orb orb-green"><span>✳</span></div>
+          <div class="collision-core"><span class="core-spark">✳</span><strong>IDEA<br />COLLISION</strong><small>2 masalah → 1 kemungkinan</small></div>
+          <div class="art-sticker">THINK<br />DIFFERENT<span>✳</span></div>
+        </div>
+      </section>
+
+      <section class="stats-row" aria-label="Statistik BENTUR">
+        <div class="stat-item"><span class="stat-icon stat-icon-orange">◎</span><div><strong id="stat-problems">—</strong><span>Masalah terkumpul</span></div></div>
+        <div class="stat-item"><span class="stat-icon stat-icon-blue">⤨</span><div><strong id="stat-collisions">—</strong><span>Tabrakan ide</span></div></div>
+        <div class="stat-item stat-note"><span class="stat-icon stat-icon-green">✳</span><div><strong>01 → ∞</strong><span>Satu ide bisa bercabang tanpa batas</span></div></div>
+      </section>
+
+      <section class="section discovery-section" id="discovery">
+        <div class="section-heading">
+          <div><span class="section-kicker">01 / DISCOVERY</span><h2>Masalah yang menunggu<br /><em>sudut pandang baru.</em></h2></div>
+          <p>Setiap masalah menyimpan peluang. Pilih dua masalah berbeda, lalu lihat apa yang mungkin tercipta.</p>
+        </div>
+        <div class="toolbar">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Cari masalah atau kata kunci…" /></label>
+          <select id="category-filter" aria-label="Filter kategori"><option>Semua</option><option>Pendidikan</option><option>Teknologi</option><option>Desain</option><option>Lingkungan</option><option>Produktivitas</option><option>Komunitas</option></select>
+          <span class="result-count" id="result-count">Memuat masalah…</span>
+        </div>
+        <div class="problem-grid" id="problem-grid" aria-live="polite"><div class="loading-card">Menyiapkan ruang ide<span class="loading-dots">•••</span></div></div>
+      </section>
+
+      <section class="lab-section" id="collision-lab">
+        <div class="lab-heading"><span class="section-kicker light-kicker">02 / COLLISION LAB</span><span class="lab-index">B-001 / GENERATOR TANTANGAN</span></div>
+        <div class="lab-layout">
+          <div class="lab-copy"><h2>Jangan berpikir<br />di <em>jalur yang sama.</em></h2><p>Ambil dua masalah dari dunia berbeda. BENTUR akan mengubahnya menjadi misi untuk menemukan solusi yang belum terpikirkan.</p><div class="lab-rule"><span>✳</span><span><strong>Aturan lab</strong><br />Gabungkan dua prinsip. Bangun prototipe kecil. Buktikan dampaknya.</span></div></div>
+          <div class="collision-builder">
+            <div class="select-block"><label for="problem-a">MASALAH PERTAMA <span>01</span></label><select id="problem-a"><option value="">Memuat masalah…</option></select></div>
+            <div class="collision-symbol" aria-hidden="true"><span>+</span><small>COLLIDE</small></div>
+            <div class="select-block"><label for="problem-b">MASALAH KEDUA <span>02</span></label><select id="problem-b"><option value="">Memuat masalah…</option></select></div>
+            <button class="button button-orange full-button" id="generate-collision">Benturkan ide <span aria-hidden="true">↗</span></button>
+            <p class="form-note" id="collision-note" role="status" aria-live="polite">Pilih dua masalah berbeda untuk memulai.</p>
+          </div>
+        </div>
+        <div class="challenge-result hidden" id="challenge-result" aria-live="polite"></div>
+      </section>
+
+      <section class="section submit-section" id="submit-problem">
+        <div class="submit-copy"><span class="section-kicker">03 / ADD TO THE UNEXPECTED</span><h2>Punya masalah?<br /><em>Bawa ke sini.</em></h2><p>Tulis masalah nyata yang kamu temukan di sekolah, rumah, pekerjaan, atau lingkungan sekitar. Masalahmu bisa menjadi awal dari ide orang lain.</p><div class="submit-aside"><span class="aside-mark">↳</span><span>Tidak harus punya solusi dulu.<br /><strong>Mulai dari masalah yang tepat.</strong></span></div></div>
+        <form class="problem-form" id="problem-form">
+          <div class="form-topline"><strong>Ajukan masalah baru</strong><span>FORM / 001</span></div>
+          <label for="title">Judul masalah <span>*</span></label><input id="title" name="title" required minlength="5" maxlength="120" placeholder="Contoh: Ide bagus sering terlupakan" />
+          <label for="description">Ceritakan masalahnya <span>*</span></label><textarea id="description" name="description" required minlength="10" maxlength="700" rows="4" placeholder="Apa yang terjadi? Siapa yang mengalaminya? Mengapa ini perlu diselesaikan?"></textarea>
+          <label for="category">Pilih bidang <span>*</span></label><select id="category" name="category" required><option value="" disabled selected>Pilih kategori masalah</option><option>Pendidikan</option><option>Teknologi</option><option>Desain</option><option>Lingkungan</option><option>Produktivitas</option><option>Komunitas</option></select>
+          <button class="button button-dark full-button" id="submit-button" type="submit">Kirim masalah <span aria-hidden="true">↗</span></button>
+          <p class="form-message" id="form-message" role="status"></p>
+        </form>
+      </section>
+
+      <section class="how-section" id="how-it-works"><div class="how-title"><span class="section-kicker">THE BENTUR METHOD</span><h2>Masalah → Tabrakan → <em>Terobosan.</em></h2></div><div class="steps-grid"><article><span class="step-number">01</span><span class="step-symbol">◉</span><h3>Temukan</h3><p>Catat masalah nyata dari bidang mana pun. Semakin spesifik, semakin baik.</p></article><article><span class="step-number">02</span><span class="step-symbol">⤨</span><h3>Benturkan</h3><p>Gabungkan dua masalah berbeda untuk memicu cara berpikir yang baru.</p></article><article><span class="step-number">03</span><span class="step-symbol">✳</span><h3>Buktikan</h3><p>Ubah gagasan menjadi prototipe kecil dan uji apakah benar-benar membantu.</p></article></div></section>
+    </main>
+
+    <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">B.</span><span>BENTUR<span class="brand-dot">/</span></span></a><span>Made for the problems worth solving.</span><a href="#home">Kembali ke atas ↑</a></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
